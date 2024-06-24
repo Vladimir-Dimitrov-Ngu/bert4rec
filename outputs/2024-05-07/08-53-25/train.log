@@ -1,0 +1,29 @@
+[2024-05-07 08:53:25,236][scripts.utils][INFO] - 
+
+
+ ### TRAIN NEW INSTANCE MODEL ###
+[2024-05-07 08:53:25,239][scripts.utils][INFO] - Call get statistics method
+[2024-05-07 08:53:25,239][scripts.utils][INFO] - Read data from path: /data/vdimitrov/transformer/data/history_from_2024-04-01_to_2024-04-22.csv in get_statistics
+[2024-05-07 08:54:26,189][scripts.utils][INFO] - PREPROCESSING DATA
+[2024-05-07 08:54:26,190][scripts.utils][INFO] - Border datetime 2024-04-21
+[2024-05-07 09:01:48,278][scripts.utils][INFO] - Cast data
+[2024-05-07 09:03:09,487][scripts.utils][INFO] - Number in observation with watch time greater than 0: 456399490
+[2024-05-07 09:09:58,605][scripts.utils][INFO] - Number unique users: 167051271
+[2024-05-07 09:09:58,996][scripts.utils][INFO] - Users with 5 or more interactions 13185368
+[2024-05-07 09:12:17,658][scripts.utils][INFO] - Number on observation in train with users did 5 or more interactions 267768412
+[2024-05-07 09:20:31,962][scripts.utils][INFO] - Train len: 212247579
+[2024-05-07 09:21:23,588][scripts.utils][INFO] - Val history: 83758934
+[2024-05-07 09:21:56,635][scripts.utils][INFO] - Val labels: 3083625
+[2024-05-07 09:23:49,419][scripts.utils][INFO] - Number users in train 13032000
+[2024-05-07 09:23:49,555][scripts.utils][INFO] - Number users in train after filter (min_sequence_len: 5): 10616943
+[2024-05-07 09:24:43,053][scripts.utils][INFO] - Number of items: 5581650
+[2024-05-07 09:24:43,608][scripts.utils][INFO] - Number of items after filtering (min items count: 5): 5581650
+[2024-05-07 09:26:19,437][scripts.utils][INFO] - Save train data
+[2024-05-07 09:26:41,133][scripts.utils][INFO] - Save val data
+[2024-05-07 09:27:33,734][scripts.utils][INFO] - All time for preprocessing: 1987.54
+[2024-05-07 09:27:52,646][scripts.utils][INFO] - Len item2id 912912
+[2024-05-07 09:27:52,646][scripts.utils][INFO] - Len train dataloader 82647
+[2024-05-07 09:27:56,033][scripts.utils][INFO] - init weights for model
+[2024-05-07 09:27:56,071][scripts.utils][INFO] - (tensor([     2, 807990, 359423, 514622, 185624, 704747, 446544, 496339],
+       dtype=torch.int32), tensor([859431,   -100,   -100,   -100,   -100,   -100,   -100,   -100]))
+[2024-05-07 09:28:00,586][scripts.utils][INFO] - SETUP DATA

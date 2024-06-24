@@ -1,0 +1,30 @@
+[2024-05-29 12:00:50,803][scripts.utils][INFO] - 
+
+
+ ### TRAIN NEW INSTANCE MODEL ###
+[2024-05-29 12:00:50,805][scripts.utils][INFO] - Call get statistics method
+[2024-05-29 12:00:50,806][scripts.utils][INFO] - Read data from path: /data/vdimitrov/transformer/data/history_2024-04-15_2024-04-22.csv in get_statistics
+[2024-05-29 12:00:56,871][scripts.utils][INFO] - PREPROCESSING DATA
+[2024-05-29 12:00:56,873][scripts.utils][INFO] - Border datetime 2024-04-21
+[2024-05-29 12:00:58,364][scripts.utils][INFO] - Number in observation with watch time greater than 0: 166626235
+[2024-05-29 12:03:06,572][scripts.utils][INFO] - Cast data
+[2024-05-29 12:05:53,642][scripts.utils][INFO] - Number unique users: 66392565
+[2024-05-29 12:05:53,793][scripts.utils][INFO] - Users with 5 or more interactions 5282648
+[2024-05-29 12:06:33,886][scripts.utils][INFO] - Number on observation in train with users did 5 or more interactions 88951452
+[2024-05-29 12:08:52,507][scripts.utils][INFO] - Train len: 60237261
+[2024-05-29 12:09:07,506][scripts.utils][INFO] - Val history: 34606770
+[2024-05-29 12:09:18,413][scripts.utils][INFO] - Val labels: 2116666
+[2024-05-29 12:09:48,006][scripts.utils][INFO] - Number users in train 5022687
+[2024-05-29 12:09:48,053][scripts.utils][INFO] - Number users in train after filter (min_sequence_len: 5): 3524516
+[2024-05-29 12:10:01,137][scripts.utils][INFO] - Number of items: 2219031
+[2024-05-29 12:10:01,279][scripts.utils][INFO] - Number of items after filtering (min items count: 5): 2219031
+[2024-05-29 12:10:35,743][scripts.utils][INFO] - Save train data
+[2024-05-29 12:10:42,308][scripts.utils][INFO] - Save val data
+[2024-05-29 12:11:08,454][scripts.utils][INFO] - Len train_dataset: 3491426
+[2024-05-29 12:11:08,455][scripts.utils][INFO] - Len test_dataset: 1787984
+[2024-05-29 12:11:08,455][scripts.utils][INFO] - All time for preprocessing: 611.58
+[2024-05-29 12:11:14,881][scripts.utils][INFO] - Len item2id 327620
+[2024-05-29 12:11:14,882][scripts.utils][INFO] - Len train dataloader 27276
+[2024-05-29 12:11:16,108][scripts.utils][INFO] - init weights for model
+[2024-05-29 12:11:16,109][scripts.utils][INFO] - (tensor([     2, 145176, 103842], dtype=torch.int32), tensor([321090,   -100,   -100]))
+[2024-05-29 12:11:23,156][scripts.utils][INFO] - SETUP DATA

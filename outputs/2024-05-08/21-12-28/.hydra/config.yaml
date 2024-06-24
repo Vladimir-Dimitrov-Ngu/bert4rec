@@ -1,0 +1,71 @@
+model:
+  name: bert4rec_again
+  dropout: 0.1
+  mask_prob: 0.5
+  freeze_backbone: false
+  n_layer: 4
+  n_head: 8
+  label_smoothing: 0.1
+  head_size: 32
+  tiny_mode: 1
+data:
+  logger_name: logs/train_logs/bert4rec_again.log
+  csv_path: /data/vdimitrov/transformer/data/history_2024-04-15_2024-04-22.csv
+  out_preprocessing_file_train: ./data/preprocessing_train_2024-04-15_2024-04-22.csv
+  out_preprocessing_file_val: ./data/preprocessing_val_2024-04-15_2024-04-22.csv
+  dataloader_num_wokers: 12
+  batch_size: 128
+  n_positions: 64
+  min_user_interactions: 5
+  min_seq_len: 5
+  min_item_cnt: 5
+  border_date: '2024-04-22'
+  start_date: '2024-04-01'
+  end_date: '2024-04-22'
+tokens:
+  pad_id: 0
+  unk_id: 1
+  mask_id: 2
+  num_special_tokens: 3
+train:
+  trim_length: 16
+  mantissa: medium
+  learning_rate: 0.00025
+  weight_decay: 1.0e-05
+  num_warmup_steps: 100
+  num_training_steps: 1000
+  num_epochs: 10
+  grad_accum_steps: 256
+  accelerator: cuda
+  devices:
+  - 0
+  precision: 16-mixed
+  val_check_interval: 1.0
+  overfit_batches: 0
+  num_sanity_val_steps: 10
+  full_deterministic_mode: false
+  benchmark: false
+  gradient_clip_val: 1.0
+  profiler: simple
+  log_every_n_steps: 1
+  batch_size_finder: false
+  detect_anomaly: false
+  scheduler: linear
+  accumulation_steps: 1
+artifacts:
+  project: rutube_project
+  experiment_name: bert4rec_again
+  checkpoint:
+    use: true
+    dirpath: ./mlm/
+    filename: '{epoch:02d}-{val_loss:.4f}'
+    monitor: val_total
+    save_top_k: 2
+    every_n_train_steps: null
+    every_n_epochs: 1
+callbacks:
+  model_summary:
+    max_depth: 1
+  swa:
+    use: false
+    lrs: 0.001

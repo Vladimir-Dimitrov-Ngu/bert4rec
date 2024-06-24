@@ -1,0 +1,25 @@
+[2024-05-05 01:25:06,656][scripts.utils][INFO] - Call get statistics method
+[2024-05-05 01:25:06,656][scripts.utils][INFO] - Read data from path: /data/vdimitrov/transformer/data/history_2024-04-15_2024-04-22.csv
+[2024-05-05 01:25:14,419][scripts.utils][INFO] - Margin: 2024-04-21
+[2024-05-05 01:25:14,420][scripts.utils][INFO] - Border datetime 2024-04-19 00:00:00
+[2024-05-05 01:28:00,125][scripts.utils][INFO] - Number in observation with watch time greater than 0: 166626235
+[2024-05-05 01:30:23,989][scripts.utils][INFO] - Number unique users: 66392565
+[2024-05-05 01:30:24,142][scripts.utils][INFO] - Users with 5 or more interactions 5282648
+[2024-05-05 01:31:07,232][scripts.utils][INFO] - Number on observation in train with users did 5 or more interactions 88951452
+[2024-05-05 01:33:33,128][scripts.utils][INFO] - Train len: 44374744
+[2024-05-05 01:33:52,888][scripts.utils][INFO] - Val history: 50787787
+[2024-05-05 01:34:10,436][scripts.utils][INFO] - Val labels: 3624237
+[2024-05-05 01:34:47,474][scripts.utils][INFO] - Number users in train 4432711
+[2024-05-05 01:34:47,520][scripts.utils][INFO] - Number users in train after filter (min_sequence_len: 3): 3549860
+[2024-05-05 01:34:57,555][scripts.utils][INFO] - Number of items: 1796966
+[2024-05-05 01:34:57,750][scripts.utils][INFO] - Number of items after filtering (min items count: 3): 1796966
+[2024-05-05 01:35:43,364][scripts.utils][INFO] - Save train data
+[2024-05-05 01:35:49,516][scripts.utils][INFO] - Save val data
+[2024-05-05 01:35:58,080][scripts.utils][INFO] - All time for preprocessing: 643.66
+[2024-05-05 01:36:07,864][scripts.utils][INFO] - Len item2id 416125
+[2024-05-05 01:36:07,864][scripts.utils][INFO] - Len train dataloader 13753
+[2024-05-05 01:36:08,073][scripts.utils][INFO] - init weights for model
+[2024-05-05 01:36:08,075][scripts.utils][INFO] - (tensor([     2, 110945,  40943, 415655,     96,     66, 320183, 323713, 110945,
+         40943, 371683, 361349, 371683], dtype=torch.int32), tensor([40943,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100]))
+[2024-05-05 01:36:11,556][scripts.utils][INFO] - SETUP DATA

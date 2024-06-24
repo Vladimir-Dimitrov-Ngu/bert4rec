@@ -1,0 +1,18 @@
+[2024-05-03 12:45:31,799][scripts.utils][INFO] - Activate train mode
+[2024-05-03 12:48:24,562][scripts.utils][INFO] - Number in observation with watch time greater than 0: 166626235
+[2024-05-03 12:50:41,222][scripts.utils][INFO] - Number unique users: 66392565
+[2024-05-03 12:50:41,490][scripts.utils][INFO] - Users with 2 or more interactions 16290445
+[2024-05-03 12:51:39,087][scripts.utils][INFO] - Number on observation in train with users did 2 or more interactions 116341628
+[2024-05-03 12:55:17,090][scripts.utils][INFO] - Train len: 78269387
+[2024-05-03 12:55:39,107][scripts.utils][INFO] - Val history: 37042348
+[2024-05-03 12:55:52,851][scripts.utils][INFO] - Val labels: 3712794
+[2024-05-03 12:56:44,918][scripts.utils][INFO] - Number users in train 15031895
+[2024-05-03 12:56:45,041][scripts.utils][INFO] - Number users in train after filter (min_sequence_len: 3): 6405817
+[2024-05-03 12:57:04,588][scripts.utils][INFO] - Number of items: 2736474
+[2024-05-03 12:57:04,930][scripts.utils][INFO] - Number of items after filtering (min items count: 3): 2736474
+[2024-05-03 12:57:55,309][scripts.utils][INFO] - Save train data
+[2024-05-03 12:58:04,268][scripts.utils][INFO] - Save val data
+[2024-05-03 12:58:35,339][scripts.utils][INFO] - All time for preprocessing: 783.54
+[2024-05-03 12:58:45,565][scripts.utils][INFO] - Len item2id 643927
+[2024-05-03 12:58:45,565][scripts.utils][INFO] - Len train dataloader 49531
+[2024-05-03 12:58:47,906][scripts.utils][INFO] - (tensor([     2, 120361], dtype=torch.int32), 'cbf67245-1c8e-4f26-85b3-9ecca4d61595')

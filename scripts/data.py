@@ -169,7 +169,7 @@ class MyDataModule(lightning.pytorch.LightningDataModule):
         self.logger.info(
             f"Number on observation in train with users did {min_user_interactions} or more interactions {train.shape[0]}"
         )
-        
+
         # Create a column for previous item ID and a flag for item change
         train = train.with_columns(
             prev_item_id=pl.col("item_id").shift(1).over("user_id")

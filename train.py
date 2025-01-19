@@ -14,11 +14,11 @@ from scripts.utils import logger_init
 def main(cfg: DictConfig):
     """
     Main training function for initializing and training the model using PyTorch Lightning.
-    
+
     Args:
-        cfg (DictConfig): Configuration object created using Hydra, containing all the necessary parameters 
+        cfg (DictConfig): Configuration object created using Hydra, containing all the necessary parameters
                           for data processing, model initialization, and training.
-                          
+
     Returns:
         None
     """

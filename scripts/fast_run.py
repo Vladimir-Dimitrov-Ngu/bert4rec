@@ -264,7 +264,7 @@ class ItemModel(pytorch_lightning.LightningModule):
 
         self.padding_idx = padding_idx
         self.num_special_tokens = num_special_tokens
-        self.initializer_range = 1.0 / embedding_size ** 0.5
+        self.initializer_range = 1.0 / embedding_size**0.5
 
         config = BertConfig(
             vocab_size=len(item2id) + num_special_tokens,
@@ -284,9 +284,9 @@ class ItemModel(pytorch_lightning.LightningModule):
         self.V = config.vocab_size
 
         loss_class_weight = torch.ones(self.V)
-        loss_class_weight[
-            :num_special_tokens
-        ] = 0.0  # we don't care about a special token loss
+        loss_class_weight[:num_special_tokens] = (
+            0.0  # we don't care about a special token loss
+        )
         self.loss_fn_train = torch.nn.CrossEntropyLoss(
             weight=loss_class_weight,
             reduction="none",

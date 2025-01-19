@@ -61,7 +61,7 @@ class MyModel(pl.LightningModule):
 
         # model params and layer
         self.bias = nn.Parameter(torch.zeros(self.vocab_size))
-        self.initializer_range = 1.0 / self.bert4rec.embedding_size ** 0.5
+        self.initializer_range = 1.0 / self.bert4rec.embedding_size**0.5
 
         # loss
         loss_class_weight = torch.ones(self.vocab_size)

@@ -59,20 +59,20 @@ with gr.Blocks() as demo:
         get_recommends_btn = gr.Button(value="Recommends", variant="primary")
     with gr.Row():
         history_categories = gr.DataFrame(
-            label=f"Categories history for user", height=1500
+            label="Categories history for user", height=1500
         )
     with gr.Row():
-        history_author = gr.DataFrame(label=f"Authors history for user", height=1500)
+        history_author = gr.DataFrame(label="Authors history for user", height=1500)
     with gr.Row():
         recommends_videos = gr.DataFrame(
-            label=f"Recommends categories for user", height=1500
+            label="Recommends categories for user", height=1500
         )
     with gr.Row():
         recommends_author = gr.DataFrame(
-            label=f"Recommends authors for user", height=1500
+            label="Recommends authors for user", height=1500
         )
     with gr.Row():
-        recommends_ids = gr.DataFrame(label=f"Recommends IDS", height=1500)
+        recommends_ids = gr.DataFrame(label="Recommends IDS", height=1500)
 
     with gr.Row():
         answer = gr.Radio(
